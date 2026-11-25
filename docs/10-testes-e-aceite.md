@@ -8,7 +8,7 @@ Vitest para lógica pura e propriedade; Playwright para fluxos e UI; axe-core e 
 
 | ID | Verificação | Critério proposto |
 | --- | --- | --- |
-| TST-001 | Partida e placar | 180 s de jogo, placar válido, `match:end` uma vez |
+| TST-001 | Partida e placar | Cada time inicia com 1 goleiro e 10 atletas de linha; 180 s de jogo, placar válido, `match:end` uma vez |
 | TST-002 | Estático e constantes | Snapshots, lint de strings, `tsc --noEmit` |
 | TST-003 | Movimento | Aceleração, velocidade máxima e sprint |
 | TST-004 | Troca | Seleção, histerese e ausência de flicker |
@@ -18,7 +18,7 @@ Vitest para lógica pura e propriedade; Playwright para fluxos e UI; axe-core e 
 | TST-008 | Goleiro | Resposta proporcional e chute inevitável entra |
 | TST-009 | Balanceamento | 1.000 partidas por dificuldade; faixas de gols e vitórias |
 | TST-010 | Economia | 100 saves sem falência incapacitante antes da rodada 10 |
-| TST-011 | Táticas | Formações e instruções mudam comportamento mensuravelmente |
+| TST-011 | Táticas | Cada formação válida tem 10 atletas de linha mais goleiro; formações e instruções mudam comportamento mensuravelmente |
 | TST-012 | Reinícios | Todos resolvem e retornam a Play |
 | TST-013 | HUD | Tempo/placar corretos, alvos e fluxo touch |
 | TST-014 | Assistência | Não altera a física após o disparo |
@@ -31,7 +31,7 @@ Vitest para lógica pura e propriedade; Playwright para fluxos e UI; axe-core e 
 | TST-021 | Simulação | Médias da simulação e cena convergem em ±10% |
 | TST-022 | Determinismo/fuzz | Mesma seed e mesmos inputs; 1.000 partidas sem crash |
 | TST-023 | Ciclo de vida | Zero listeners vazados após shutdown |
-| TST-024 | Performance | FPS, latência, bundle e tamanho de assets medidos |
+| TST-024 | Performance | FPS e latência medidos com 22 atletas; bundle e assets auditados |
 | TST-025 | Offline/compatibilidade | Primeiro cache, reload offline, browsers e `file://` |
 
 ## Cenários críticos em Gherkin
@@ -39,6 +39,12 @@ Vitest para lógica pura e propriedade; Playwright para fluxos e UI; axe-core e 
 ```gherkin
 # language: pt
 Funcionalidade: Partida e relógio
+  Cenário: Escalação inicial 11v11
+    Dado que duas equipes elegíveis iniciam a partida
+    Então cada equipe deve ter exatamente 11 atletas em campo
+    E cada equipe deve ter 1 goleiro e 10 atletas de linha
+    E deve haver 22 atletas em campo ao apito inicial
+
   Cenário: Partida termina normalmente
     Dado que uma partida foi iniciada
     Quando 180 segundos de jogo ativo forem consumidos

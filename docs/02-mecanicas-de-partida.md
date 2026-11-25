@@ -4,7 +4,7 @@
 
 ## Regras e estados — MEC-001
 
-7v7, um goleiro e seis atletas de linha por equipe. Tempo ativo: **2 × 90 s**, intervalo de 10 s; 3 substituições, no intervalo ou em bola parada. Campo 1.600 × 1.000 u; área 300 × 420 u; gol 160 u de largura e 100 u de profundidade. Empates são válidos na liga; a classificação usa vitória 3, empate 1, derrota 0 **pontos**.
+**11v11:** cada equipe inicia com **11 atletas: 1 goleiro e 10 atletas de linha**, totalizando 22 atletas no campo. A quantidade de atletas pode diminuir após expulsões; o mínimo permitido e o procedimento de encerramento por falta de jogadores estão pendentes de definição. Tempo ativo: **2 × 90 s**, intervalo de 10 s; 3 substituições, no intervalo ou em bola parada, desde que haja reservas elegíveis. Campo 1.600 × 1.000 u; área 300 × 420 u; gol 160 u de largura e 100 u de profundidade. Empates são válidos na liga; a classificação usa vitória 3, empate 1, derrota 0 **pontos**.
 
 ```mermaid
 stateDiagram-v2
@@ -87,7 +87,7 @@ Utility AI seleciona comportamentos; steering executa seek, arrive, pursue e sep
 | Elite | 200 ms | 6% | 1,00 | +10 |
 | Lendário | 140 ms | 3% | 1,15 | +15 |
 
-Erro de decisão é escolha da segunda melhor opção; IA não lê o input humano no mesmo frame. Formações: **2-3-1**, **3-2-1**, **1-2-2-1**, **2-1-1-2**. Cinco instruções: postura, pressão, amplitude, tempo de posse e marcação. Pressão alta acrescenta 0,2 à intensidade e multiplica dreno por 1,3; faixas de pressão: 220/320/420 u.
+Erro de decisão é escolha da segunda melhor opção; IA não lê o input humano no mesmo frame. As quatro formações 7v7 do GDD original deixam de se aplicar. Para manter a meta de quatro formações, propõem-se **4-3-3**, **4-4-2**, **3-5-2** e **4-2-3-1**; são sugestões, não escolhas aprovadas. Cada desenho soma 10 atletas de linha, além do goleiro. Papéis, coordenadas e efeitos ainda precisam ser definidos e validados para 11v11. Cinco instruções: postura, pressão, amplitude, tempo de posse e marcação. Pressão alta acrescenta 0,2 à intensidade e multiplica dreno por 1,3; faixas de pressão: 220/320/420 u.
 
 Assistência **Total** mira automaticamente no companheiro mais alinhado e no canto aberto; **Parcial** amplia cone em 60% e reduz erro em 40%; **Nenhuma** usa vetor cru. A assistência só altera o vetor inicial, não a física após disparo.
 
@@ -102,7 +102,7 @@ Assistência **Total** mira automaticamente no companheiro mais alinhado e no ca
 | Pênalti | Falta na área | Mira e força | 4 s |
 | Saída | Início ou gol | Passe curto ao volante | 1 s |
 
-IA não pressiona durante o reinício; mobile deve oferecer pular. Cartão amarelo em 25% das faltas, 45% por trás; dois amarelos expulsam; vermelho direto para falta na área como último defensor em 15% dos casos. Suspensão por amarelos acumulados em duas partidas. O GDD também afirma que nenhum time joga com menos de seis; resolver comportamento de uma segunda expulsão. O pênalti detalhado é classificado como Should embora sua ocorrência seja Must.
+IA não pressiona durante o reinício; mobile deve oferecer pular. Cartão amarelo em 25% das faltas, 45% por trás; dois amarelos expulsam; vermelho direto para falta na área como último defensor em 15% dos casos. Suspensão por amarelos acumulados em duas partidas. O limite antigo de seis atletas foi definido para 7v7 e não se aplica automaticamente ao novo formato; definir o mínimo em campo, o procedimento de encerramento e o resultado da partida quando esse mínimo não for cumprido. O pênalti detalhado é classificado como Should embora sua ocorrência seja Must.
 
 ## Simulação rápida — MEC-022
 

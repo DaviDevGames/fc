@@ -6,7 +6,7 @@
 
 | Termo | Significado |
 | --- | --- |
-| 7v7 | Sete atletas por equipe, incluindo goleiro |
+| 11v11 | Onze atletas iniciais por equipe: um goleiro e dez atletas de linha |
 | ADR | Registro de decisão arquitetural, contexto e consequências |
 | Assistência | Ajuste de mira antes do disparo, sem alterar física posterior |
 | Autosave | Gravação automática após mudança de estado |

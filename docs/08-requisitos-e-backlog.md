@@ -8,7 +8,7 @@ As prioridades são as declaradas no GDD, incluindo divergências entre tabelas.
 
 | ID | Requisito | Prioridade |
 | --- | --- | --- |
-| REQ-F-001 | Partida 7v7, 180 s, campo 2D | Must |
+| REQ-F-001 | Partida 11v11 com 1 goleiro e 10 atletas de linha por equipe, 180 s, campo 2D | Must |
 | REQ-F-002 | Movimento com aceleração e sprint | Must |
 | REQ-F-003 | Troca automática/manual com histerese | Must |
 | REQ-F-004 | Passe curto/médio/longo e cone de mira | Must |
@@ -16,7 +16,7 @@ As prioridades são as declaradas no GDD, incluindo divergências entre tabelas.
 | REQ-F-006 | Desarme e faltas por contato | Must |
 | REQ-F-007 | Goleiro posiciona, defende e repõe | Must |
 | REQ-F-008 | IA por papel e quatro dificuldades | Must |
-| REQ-F-009 | Quatro formações e cinco instruções com efeito | Must |
+| REQ-F-009 | Quatro formações de 10 atletas de linha e cinco instruções com efeito; desenhos a definir | Must |
 | REQ-F-010 | Lateral, escanteio, tiro de meta, falta e pênalti | Must |
 | REQ-F-011 | HUD de placar, tempo, estamina e instruções | Must |
 | REQ-F-012 | Joystick e quatro botões touch ≥ 48 px | Must |
@@ -94,12 +94,12 @@ As prioridades são as declaradas no GDD, incluindo divergências entre tabelas.
 | BKL-029 | PWA e offline | 1 d |
 | BKL-030 | Acessibilidade avançada | 1,5 d |
 
-A soma dos valores das linhas é **43,5 dias**, não 47,5 dias conforme o total textual do GDD. Ambas excluem trabalho adicional não estimado; reconciliar antes de comprometer prazo.
+A soma dos valores originais das linhas é **43,5 dias**, não 47,5 dias conforme o total textual do GDD. Ambas são estimativas anteriores à mudança para 11v11 e excluem trabalho adicional não estimado; reestimar IA, formações, interface, teste, performance e gestão antes de comprometer prazo.
 
 ## Demais prioridades
 
 - **Should:** BKL-031 loja e upgrades; 032 comissão; 033 dicas; 034 pausa tática; 035 créditos; 036 áudio; 037 arte final.
 - **Could:** BKL-038 desafios; 039 copa nacional; 040 editor de escudo avançado; 041 histórico e recordes; 042 inglês; 043 retratos.
-- **Won't v1.0:** multiplayer, 11v11, 3D/física realista, licenças reais, contas/nuvem, anúncios e microtransações.
+- **Won't v1.0:** multiplayer, 3D/física realista, licenças reais, contas/nuvem, anúncios e microtransações. O 11v11 foi movido para o escopo por decisão posterior do usuário.
 
 Observe que REQ-F-030 é Must enquanto BKL-034 é Should; REQ-F-027 é Could enquanto BKL-032 é Should. Resolver explicitamente. Matriz de rastreabilidade: [glossário e rastreabilidade](12-glossario-e-rastreabilidade.md).

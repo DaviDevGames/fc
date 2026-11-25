@@ -2,13 +2,13 @@
 
 > Três minutos de futebol no navegador — e uma temporada para construir o seu clube.
 
-**FC** é a especificação de um jogo de futebol 2D 7v7 que combina controle direto em partidas curtas com gestão de clube, elenco e carreira. A proposta é funcionar no navegador, sem backend, contas ou microtransações, com suporte offline após o primeiro acesso.
+**FC** é a especificação de um jogo de futebol 2D 11v11 que combina controle direto em partidas curtas com gestão de clube, elenco e carreira. A proposta é funcionar no navegador, sem backend, contas ou microtransações, com suporte offline após o primeiro acesso.
 
 > **Estado do repositório:** documentação de planejamento. O GDD de referência está aprovado como especificação, mas a escolha de escopo e prazo está pendente e é bloqueante antes do marco M1. Este repositório não afirma conter jogo, código, build ou testes implementados.
 
 ## O jogo em resumo
 
-- **Partida:** 7 contra 7, dois tempos de 90 segundos de jogo, visão aérea inclinada e controles arcade.
+- **Partida:** 11 contra 11, com 1 goleiro e 10 atletas de linha por equipe, dois tempos de 90 segundos de jogo, visão aérea inclinada e controles arcade.
 - **Carreira:** quatro divisões de oito clubes, 14 rodadas por temporada, acesso, rebaixamento, treino e mercado.
 - **Acesso:** navegador desktop e mobile, com PWA e save local exportável planejados.
 - **Identidade:** clubes, atletas e escudos fictícios; pixel art legível e interface em português do Brasil.
@@ -50,4 +50,4 @@ O GDD recomenda **A**, mas a escolha pertence ao usuário. As projeções requer
 
 ## Sobre esta documentação
 
-Documentos organizados e adaptados a partir do **GDD-FC.md v1.0.0**, de 04/11/2026. Os arquivos são uma organização temática do conteúdo fornecido, não uma reprodução literal integral. Números são metas e hipóteses de design, não resultados comprovados. Conflitos do documento original estão registrados em [riscos e auditoria](docs/11-riscos-decisoes-e-auditoria.md) e não foram resolvidos unilateralmente.
+Documentos organizados e adaptados a partir do **GDD-FC.md v1.0.0**, de 04/11/2026, atualizados para 11v11 por decisão posterior do usuário. Os arquivos são uma organização temática do conteúdo fornecido, não uma reprodução literal integral. Números são metas e hipóteses de design, não resultados comprovados. Conflitos do documento original estão registrados em [riscos e auditoria](docs/11-riscos-decisoes-e-auditoria.md) e não foram resolvidos unilateralmente.

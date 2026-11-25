@@ -21,9 +21,9 @@ Em conflitos, controle vence realismo; densidade vence profundidade no primeiro 
 
 ## Escopo declarado
 
-**Dentro do MVP-alvo:** partida rápida contra IA; carreira renovável com 4 divisões × 8 clubes; 7v7, 2 × 90 s e regras simplificadas; mercado, base e treino; persistência local, exportação/importação JSON e PWA offline; remapeamento, escala, paleta acessível e redução de movimento.
+**Dentro do MVP-alvo:** partida rápida contra IA; carreira renovável com 4 divisões × 8 clubes; 11v11 (1 goleiro e 10 atletas de linha por equipe), 2 × 90 s e regras simplificadas; mercado, base e treino; persistência local, exportação/importação JSON e PWA offline; remapeamento, escala, paleta acessível e redução de movimento.
 
-**Fora da v1.0:** multiplayer e ranking global; backend, conta, nuvem e cross-save; 11v11, 3D e física realista; licenças reais; editor tático avançado individual; futebol feminino, seleções e copas continentais; localização além de pt-BR.
+**Fora da v1.0:** multiplayer e ranking global; backend, conta, nuvem e cross-save; 3D e física realista; licenças reais; editor tático avançado individual; futebol feminino, seleções e copas continentais; localização além de pt-BR.
 
 ## Loops
 
@@ -44,4 +44,4 @@ Uma temporada é estimada em cerca de 63 min, e a subida D→A em cerca de 4,2 h
 | 5:30–8:00 | Treino ou contratação guiada |
 | 8:00–10:00 | Início da carreira na Série D |
 
-O roteiro é intenção de design; a relação entre partida rápida, recompensa e criação de carreira precisa ser esclarecida na implementação.
+A mudança para 11v11 altera o escopo original e exige revalidação de formações, câmera, desempenho, economia e estimativas. O roteiro é intenção de design; a relação entre partida rápida, recompensa e criação de carreira precisa ser esclarecida na implementação.

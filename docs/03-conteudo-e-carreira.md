@@ -10,7 +10,7 @@ Clubes, atletas e calendários devem ser gerados proceduralmente com seed determ
 
 ### ENT-001 · Clube
 
-ID (`slug + seed`), nome de 3–24 caracteres, sigla editável de 3 caracteres, escudo paramétrico com forma, duas cores e padrão; divisão 1–4, reputação 0–100, orçamento em CR, estádio, tática e elenco de 11–18 atletas. Estádio planejado de 1.000 a 30.000 lugares, nível 1–5. Tática: formação e cinco instruções.
+ID (`slug + seed`), nome de 3–24 caracteres, sigla editável de 3 caracteres, escudo paramétrico com forma, duas cores e padrão; divisão 1–4, reputação 0–100, orçamento em CR, estádio, tática e elenco de 11–18 atletas, conforme o GDD original; com 11 titulares, o mínimo existente não garante reservas. A quantidade mínima e o teto de elenco para 11v11, incluindo goleiro reserva e substituições, precisam ser reavaliados. Estádio planejado de 1.000 a 30.000 lugares, nível 1–5. Tática: formação e cinco instruções; as formações anteriores de 7v7 precisam ser substituídas por desenhos para 10 atletas de linha.
 
 ### ENT-002/003 · Atleta e atributos
 

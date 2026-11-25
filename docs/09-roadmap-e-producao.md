@@ -14,7 +14,7 @@
 
 ## Estimativa e ressalvas
 
-O texto original declara 47,5 dias × 8 h = 380 h; com 20% de overhead, 456 h, ou 38 semanas a 12 h/semana e ~23 semanas a 20 h/semana. **A soma das 30 linhas do backlog é, porém, 43,5 dias**, equivalendo a 348 h e 417,6 h com o mesmo overhead: ~34,8 semanas a 12 h/semana ou ~20,9 a 20 h/semana. Esses cálculos não tornam a estimativa confiável: arte, áudio, QA, integração e contingências devem ser explicitamente revisados. O prazo do caminho A também requer estimativa própria por item e capacidade.
+As estimativas a seguir são históricas e anteriores à alteração para 11v11: é necessário reestimar o projeto e os três caminhos. O texto original declara 47,5 dias × 8 h = 380 h; com 20% de overhead, 456 h, ou 38 semanas a 12 h/semana e ~23 semanas a 20 h/semana. **A soma das 30 linhas do backlog é, porém, 43,5 dias**, equivalendo a 348 h e 417,6 h com o mesmo overhead: ~34,8 semanas a 12 h/semana ou ~20,9 a 20 h/semana. Esses cálculos não tornam a estimativa confiável: arte, áudio, QA, integração e contingências devem ser explicitamente revisados. O prazo do caminho A também requer estimativa própria por item e capacidade.
 
 ## Marcos propostos
 
@@ -22,7 +22,7 @@ O texto original declara 47,5 dias × 8 h = 380 h; com 20% de overhead, 456 h, o
 | --- | --- | --- |
 | M1 | Fundação | Campo vazio e um atleta controlável |
 | M2 | Campo | Dois atletas, bola, passe e chute |
-| M3 | Defesa | 7v7, gol, goleiro e faltas |
+| M3 | Defesa | 11v11, com 1 goleiro e 10 atletas de linha por equipe, gol, goleiros e faltas |
 | M4 | IA | Quatro dificuldades e partidas competitivas |
 | M5 | Interface | HUD, touch e hub navegável |
 | M6 | Gestão | Mercado, treino e tabela de carreira |

@@ -2,7 +2,7 @@
 
 [Índice](README.md) · [Requisitos e backlog →](08-requisitos-e-backlog.md)
 
-> As tabelas são metas e estimativas do GDD, não medições. O material apresenta inconsistências relevantes; veja a [auditoria](11-riscos-decisoes-e-auditoria.md).
+> As tabelas são metas e estimativas do GDD de 7v7, não medições, e precisam de recalibração para 11v11. O material apresenta inconsistências relevantes; veja a [auditoria](11-riscos-decisoes-e-auditoria.md).
 
 ## Fórmulas consolidadas
 
@@ -47,7 +47,7 @@ O GDD propõe constantes `readonly` em `src/shared/balancing.ts`, testes de snap
 | Duração real | 4m20s ±20s | ≤ 5 min |
 | Tempo até primeiro gol | 55 s | 35–90 s |
 
-Medir por playtest e simulações; o cálculo correto de conversão é gols ÷ chutes. Não tomar simulação abstrata como prova de que a IA visual ou a experiência humana cumprem as metas.
+Todas as metas e constantes herdadas do 7v7 permanecem provisórias até validação com 22 atletas. Medir por playtest e simulações; o cálculo correto de conversão é gols ÷ chutes. Não tomar simulação abstrata como prova de que a IA visual ou a experiência humana cumprem as metas.
 
 ## Progressão do clube
 

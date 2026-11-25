@@ -6,9 +6,9 @@
 
 | ID | Hipótese | Validação / prazo sugerido |
 | --- | --- | --- |
-| SUP-01 | 7v7 e 2 × 90 s são divertidos e legíveis em 5 polegadas | Cinco pessoas, M3 |
+| SUP-01 | 11v11 e 2 × 90 s são divertidos e legíveis em 5 polegadas | Nova validação com cinco pessoas, M3; hipótese original era 7v7 |
 | SUP-02 | Câmera portrait e minimapa são jogáveis | Três aparelhos reais, M3 |
-| SUP-03 | Quatro formações geram variedade suficiente | Playtest M6 |
+| SUP-03 | Quatro formações 11v11 geram variedade suficiente | Definir desenhos e validar em playtest M6 |
 | SUP-04 | Seis atributos diferenciam atletas | TST-007, M6 |
 | SUP-05 | Economia apertada gera tensão sem frustração | TST-010 e playtest, M7 |
 | SUP-06 | Áudio CC0/sintetizado serve à identidade | Protótipo sonoro M5 |
@@ -28,7 +28,7 @@
 | RSK-05 | Áudio inadequado ou licença ambígua | Auditar licenças; sintetizar ou desabilitar áudio |
 | RSK-06 | Câmera retrato confusa | Playtest, minimapa e indicador; eventual landscape |
 | RSK-07 | Ausência de spin reduz variedade | Testar; curva simplificada pós-corte se necessário |
-| RSK-08 | FPS insuficiente em Android | Medição em hardware; modo low e menos efeitos |
+| RSK-08 | FPS insuficiente em Android, ampliado de 14 para 22 atletas em campo | Medição em hardware com 11v11; reavaliar IA e física; modo low e menos efeitos |
 | RSK-09 | Corrupção ou quota causam perda | Backup, validação, tratamento de falhas e exportação |
 | RSK-10 | Vazamento de listeners | Limpeza de cena e TST-023 |
 | RSK-11 | Economia trava a carreira | TST-010; recalibrar receitas e custos |
@@ -69,7 +69,12 @@ Estas observações foram identificadas na organização do material e **não al
 13. **Estádio e comissão:** estádio tem 1–5 níveis em ENT-001, mas upgrade de 3 níveis em §9. Preparador físico é +20% por nível em ENT-004 e +20% total no nível 3 em §10.6.
 14. **Requisitos e auditoria:** checklist afirma 29 ✅/2 ⚠️/1 ❌, mas os ícones das 32 linhas parecem somar 30 ✅/1 ⚠️/1 ❌; tabela B.4 lista REQ-F-028 como órfão apesar do vínculo BKL-041. A cobertura de MEC é descrita ora como 24, ora 25.
 15. **Rede/offline:** um service worker pode satisfazer requisições do próprio navegador a partir do cache sem acessar a rede; esclarecer se “zero requisição” significa zero tráfego externo. Atualização automática e banner de atualização precisam ser compatibilizados.
-16. **Regras de disciplina:** amarelo aos dois acúmulos, amarelo por probabilidade e limite mínimo de seis atletas necessitam uma regra única e definição para nova expulsão. Alguns cenários Gherkin afirmam resultado garantido apesar de sorteios por duelo.
+16. **Regras de disciplina:** amarelo aos dois acúmulos e amarelo por probabilidade necessitam uma regra única. O antigo limite mínimo de seis atletas era do 7v7 e foi retirado; definir mínimo, encerramento e resultado para 11v11. Alguns cenários Gherkin afirmam resultado garantido apesar de sorteios por duelo.
+17. **Transição 11v11:** definir quatro formações e coordenadas para dez atletas de linha; quantidade mínima de reservas, goleiro reserva, substituições e teto de elenco. Revalidar campo, câmera, densidade, IA, desempenho, economia e metas estatísticas com 22 atletas. Reestimar backlog e prazos antes de escolher escopo.
+
+## Atualização de escopo: 11v11
+
+Decisão posterior do usuário: cada equipe inicia com **1 goleiro e 10 atletas de linha**, num total de 22 em campo. O 11v11 deixa de ser exclusão do MVP e substitui o 7v7 nas regras e requisitos. Não foram aprovadas novas formações, tamanho de banco, limiar de abandono ou mudanças nas dimensões do campo; esses pontos permanecem para definição.
 
 ## Auditoria original e status
 

@@ -1,6 +1,6 @@
 # Documentação do FC
 
-Esta pasta organiza o conteúdo do GDD-FC v1.0.0 em documentos navegáveis no GitHub. Volte ao [README principal](../README.md).
+Esta pasta organiza o conteúdo do GDD-FC v1.0.0 em documentos navegáveis no GitHub, com atualização posterior para partidas 11v11 por decisão do usuário. Volte ao [README principal](../README.md).
 
 ## Ordem de leitura sugerida
 

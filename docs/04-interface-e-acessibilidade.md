@@ -17,7 +17,7 @@ Uma decisão por tela; até cinco ações primárias no hub. Mobile-first na lei
 | UI-05 | Calendário, rodada e simulação |
 | UI-06 | Elenco |
 | UI-07 | Mercado e transferências |
-| UI-08 | Tática e escalação |
+| UI-08 | Tática e escalação: 11 titulares (1 goleiro e 10 de linha) e reservas elegíveis |
 | UI-09 | HUD da partida |
 | UI-10 | Pausa e instruções |
 | UI-11 | Resultado, estatísticas, recompensas e próxima rodada |
@@ -37,7 +37,7 @@ Fluxo: menu → novo jogo → hub → calendário/elenco/mercado/tática/loja; c
 - Paisagem compacta 600–899 px: topbar 56 px, conteúdo integral.
 - Retrato: topbar 56 px, navegação inferior 64 px e conteúdo com rolagem.
 - Canvas em paisagem: proporção 16:10 centralizada com Scale.FIT.
-- Retrato: campo não rotaciona; câmera segue bola com zoom 1,35 e deadzone 220 × 160 u; minimapa 160 × 100 px. É uma suposição sujeita a playtest e decisão TBD-01.
+- Retrato: campo não rotaciona; câmera segue bola com zoom 1,35 e deadzone 220 × 160 u; minimapa 160 × 100 px. São parâmetros herdados do 7v7, não validados para 11v11; reavaliar enquadramento, legibilidade dos 22 atletas e decisão TBD-01.
 
 ## HUD
 

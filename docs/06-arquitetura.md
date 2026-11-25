@@ -19,7 +19,7 @@ flowchart LR
 
 1. `src/app/**` não importa de `src/game/**` e vice-versa; ambos podem usar `src/shared/**`.
 2. Phaser não escreve no storage: emite resultado, React aplica e persiste.
-3. Zustand é fonte de verdade da carreira; partida recebe snapshot imutável e retorna resultado.
+3. Zustand é fonte de verdade da carreira; partida recebe snapshot imutável e retorna resultado. O snapshot deve representar 11 titulares elegíveis por equipe, incluindo um goleiro e 10 atletas de linha.
 4. O simulador headless compartilha fórmulas de balanceamento e tem médias comparadas com a cena de jogo.
 5. PRNG `mulberry32` e estado da seed persistidos; evitar `Math.random()` no domínio.
 
@@ -72,7 +72,7 @@ PWA planejado com `vite-plugin-pwa`, `registerType: autoUpdate`, precache de she
 | --- | --- | --- |
 | ADR-01 | Zustand | Estado leve e testável, sem time travel nativo por padrão |
 | ADR-02 | IndexedDB com fallback | Dois backends atrás de interface única |
-| ADR-03 | Arcade Physics, não Matter.js | Simplicidade; sem física de rotação complexa |
+| ADR-03 | Arcade Physics, não Matter.js | Simplicidade; sem física de rotação complexa. Reavaliar desempenho com 22 atletas em campo |
 | ADR-04 | Pixel art 32 × 32 e atlas | Legibilidade e identidade, menos detalhe |
 | ADR-05 | Simulador headless e fórmulas comuns | Necessário validar convergência com a partida jogada |
 | ADR-06 | EventEmitter3 encapsulado em bus tipado | Desacoplamento React–Phaser |
